@@ -12,7 +12,6 @@
             }
             post {
                 always {
-                    echo "reports location at sure-fire +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" 
                     junit 'target/surefire-reports/*.xml'
                 }
             }
