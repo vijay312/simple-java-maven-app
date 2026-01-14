@@ -1,4 +1,4 @@
-pipeline {
+ ""pipeline {
     agent any
     stages {
         stage('Build') {
@@ -12,6 +12,7 @@ pipeline {
             }
             post {
                 always {
+                    echo "reports location at sure-fire +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" 
                     junit 'target/surefire-reports/*.xml'
                 }
             }
